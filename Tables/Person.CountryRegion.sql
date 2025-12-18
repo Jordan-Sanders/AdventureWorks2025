@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Person].[CountryRegion] (
-  [CountryRegionCode] [nvarchar](3) NOT NULL,
+  [CountryRegionCode] [nvarchar](5) NOT NULL,
   [Name] [dbo].[Name] NOT NULL,
   [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_CountryRegion_ModifiedDate] DEFAULT (getdate()),
   CONSTRAINT [PK_CountryRegion_CountryRegionCode] PRIMARY KEY CLUSTERED ([CountryRegionCode])
